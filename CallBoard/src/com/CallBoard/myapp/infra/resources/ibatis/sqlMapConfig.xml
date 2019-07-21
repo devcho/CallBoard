@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//iBATIS.com//DTD SQL Config Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+
+<sqlMapConfig>
+
+	<settings useStatementNamespaces="true" />
+	<!-- 이곳에 설정하지 마세요 자동으로 설정됩니다. -->
+	<sqlMap resource="com/CallBoard/myapp/infra/resources/ibatis/Temp.xml"/>
+	
+</sqlMapConfig>

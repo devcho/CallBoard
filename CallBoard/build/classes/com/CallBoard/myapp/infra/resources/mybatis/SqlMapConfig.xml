@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<settings>
+		<setting name="cacheEnabled" value="true" />
+		<setting name="lazyLoadingEnabled" value="true" />
+		<setting name="multipleResultSetsEnabled" value="true" />
+		<setting name="useColumnLabel" value="true" />
+		<setting name="defaultStatementTimeout" value="25000" />
+	</settings>
+
+	<typeAliases>
+		<typeAlias alias="string" type="java.lang.String" />
+		<typeAlias alias="integer" type="java.lang.Integer" />
+		<typeAlias alias="long" type="java.lang.Long" />
+		<typeAlias alias="hashMap" type="java.util.HashMap" />
+		<typeAlias alias="arrayList" type="java.util.ArrayList" />
+		<typeAlias alias="linkedHashMap" type="java.util.LinkedHashMap" />
+		<typeAlias alias="UserVo" type="com.CallBoard.myapp.user.vo.UserVo"/>
+	</typeAliases>
+
+	<mappers>
+		<mapper resource="com/CallBoard/myapp/infra/resources/mybatis/Dummy.xml" />
+		<mapper resource="com/CallBoard/myapp/user/sql/UserMapper.xml" />
+		<!--// 여기에  XML 추가합니다.. by wclee //  -->		
+	</mappers>
+</configuration>
